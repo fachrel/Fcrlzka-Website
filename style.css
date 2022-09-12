@@ -8,11 +8,9 @@ html {
   max-width: 1440px;
   font-size: 10px;
   font-family: 'Fredoka One', cursive;
+  scroll-behavior: smooth;
 }
 
-body{
-  background: linear-gradient(45deg,#fbda61,#ff5acd)
-}
 
 img{
   max-width: 100%;
@@ -20,24 +18,32 @@ img{
 }
 
 nav {
+  position: fixed;
   display: flex;
+  z-index: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2.4rem 14rem;
+  padding: 2.4rem 10rem;
+  background-color: #fff;
+  height: 25px;
   color: #263238;
   border-bottom: 1px solid #e6e9ec;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  width: 100%;
 }
 
 nav .nav-brand {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 nav .nav-section {
-  display: flex;
+  display: absolute;
   align-items: center;
+  margin-right: 200px;
 }
 
 nav .nav-section ul {
@@ -51,14 +57,16 @@ nav .nav-section ul li {
 
 nav .nav-section ul li a {
   font-size: 1.5rem;
-  text-decoration: inline-block;
+  text-decoration: none;
   color: #000;
+  transition: all 0.3s;
 }
 
 nav .nav-brand:hover,
-nav .nav-section ul lu a:hover {
-  color: #000;
+nav .nav-section ul li a:hover {
+  color: #407bff;
 }
+
 
 header{
   display: flex;
@@ -68,11 +76,12 @@ header{
 header .bagian-satu{
   flex-basis: 50%;
   padding: 11%;
+  margin-top: 125px;
 }
 
 header .bagian-satu .text-hello{
   margin-bottom: 1rem;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -97,6 +106,131 @@ header .bagian-satu .tombol:hover{
   cursor: pointer;
 }
 
-header .bagian-dua {
+header .bagian-dua{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  margin-top: 2%;
+  margin-right: 7%;
   
 }
+.card{
+  position: absolute;
+  width: 350px;
+  height: 190px;
+  background: rgb(0, 153, 255);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  margin-top: 120px;
+}
+
+.card:hover{
+  height: 400px;
+}
+
+.imgBx{
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #ff5acd;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx{
+  width: 250px;
+  height: 250px
+}
+
+.imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .content .details{
+  padding: 39px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(70px);
+}
+
+.card:hover .content .details{
+  transform: translateY(0px);
+}
+
+.card .content .details h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span{
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.logo ul{
+  display: flex;
+  justify-content: center;
+}
+.logo ul li{
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.logo ul li:hover{
+  cursor: pointer;
+}
+.logo ul li i{
+  font-size: 25px;
+  color: #000;
+}
+
+.content-2{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+  margin-top: 30;
+  align-items: flex-center;
+}
+
+.content-2 h1{
+  font-size: 4rem;
+  margin-top: 50px;
+} 
+
+.content-2 p{
+  font-size: 2rem;
+  margin-left: 40px;
+} 
