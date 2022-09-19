@@ -214,23 +214,72 @@ header .bagian-dua{
 
 .content-2{
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   width: 100%;
   height: 700px;
   margin-top: 30;
-  align-items: flex-center;
 }
 
-.content-2 h1{
+.content-2 .judul h1{
+  position: relative;
+  text-align: center;
+  top: 90px;
   font-size: 4rem;
   margin-top: 50px;
 } 
 
-.content-2 p{
-  font-size: 2rem;
-  margin-left: 40px;
+.content-2 .judul h1:hover{
+  color: #407bff;
 } 
+
+.content-2 .isi p{
+  position: absolute;
+  bottom: 295px;
+  left: 90px;
+  font-size: 2rem;
+  width: 400px;
+  height: 100px;
+} 
+
+.foto-2 img{
+  width: 450px;
+  position: absolute;
+  right: 90px;
+  bottom: 140px;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.50);
+}
+
+.content-3{
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.content-3 .judul-2 h1{
+  position: relative;
+  text-align: center;
+  top: 90px;
+  font-size: 4rem;
+}
+
+.content-3 .medsos{
+  text-align: center;
+}
+
+.content-3 .medsos ul{
+  list-style: none;
+}
+
+.content-3 .medsos ul li{
+  position: relative;
+  top: 200px;
+  font-size: 3rem;
+}
+
+.content-3 .medsos ul li a{
+  color: #000;
+}
+
+.content-3 .medsos ul li i{
+  color: #000;
+}
