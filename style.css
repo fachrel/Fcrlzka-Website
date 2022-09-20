@@ -40,6 +40,7 @@ nav .nav-brand {
   transition: all 0.3s;
 }
 
+
 nav .nav-section {
   display: absolute;
   align-items: center;
@@ -87,6 +88,7 @@ header .bagian-satu .text-hello{
 
 header .bagian-satu p{
   font-size: 1.5rem;
+  opacity: 0.5;
 }
 
 header .bagian-satu .tombol{
@@ -94,10 +96,16 @@ header .bagian-satu .tombol{
   padding: 1rem 4rem;
   font-size: 1.5rem;
   background-color: rgb(0, 153, 255);
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 2rem;
   transition: all 0.3s;
+  font-family: 'Fredoka One', cursive;
+}
+
+header .bagian-satu .tombol a{
+  color: white;
+  text-decoration: none;
 }
 
 header .bagian-satu .tombol:hover{
@@ -116,100 +124,20 @@ header .bagian-dua{
   margin-right: 7%;
   
 }
-.card{
+
+.bagian-dua img{
+  width: 450px;
   position: absolute;
-  width: 350px;
-  height: 190px;
-  background: rgb(0, 153, 255);
+  right: -10px;
+  bottom: 70px;
   border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-  transition: 0.5s;
-  margin-top: 120px;
-}
-
-.card:hover{
-  height: 400px;
-}
-
-.imgBx{
-  position: absolute;
-  left: 50%;
-  top: -50px;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
-  background: #ff5acd;
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
-  overflow: hidden;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.50);
   transition: 0.5s;
 }
 
-.card:hover .imgBx{
-  width: 250px;
-  height: 250px
-}
-
-.imgBx img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card .content{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-}
-
-.card .content .details{
-  padding: 39px;
-  text-align: center;
-  width: 100%;
-  transition: 0.5s;
-  transform: translateY(70px);
-}
-
-.card:hover .content .details{
-  transform: translateY(0px);
-}
-
-.card .content .details h2{
-  font-size: 2rem;
-  font-weight: 600;
-  color: #000;
-  line-height: 1.2em;
-}
-
-.card .content .details h2 span{
-  font-size: 1.5rem;
-  font-weight: 500;
-  opacity: 0.5;
-}
-
-.logo ul{
-  display: flex;
-  justify-content: center;
-}
-.logo ul li{
-  list-style: none;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
-.logo ul li:hover{
-  cursor: pointer;
-}
-.logo ul li i{
-  font-size: 25px;
-  color: #000;
+.bagian-dua img:hover{
+  transform: scale(0.95);;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.50);
 }
 
 .content-2{
@@ -225,28 +153,56 @@ header .bagian-dua{
   top: 90px;
   font-size: 4rem;
   margin-top: 50px;
+  transition: 0.5s;
 } 
 
 .content-2 .judul h1:hover{
   color: #407bff;
 } 
 
-.content-2 .isi p{
-  position: absolute;
-  bottom: 295px;
-  left: 90px;
-  font-size: 2rem;
-  width: 400px;
-  height: 100px;
-} 
+.content-2 .isi{
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
 
-.foto-2 img{
-  width: 450px;
-  position: absolute;
-  right: 90px;
-  bottom: 140px;
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.50);
+.content-2 .isi .isi-1{
+  margin: 10px;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.content-2 .isi .isi-2{
+  margin: 10px;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.content-2 .isi .isi-3{
+  margin: 10px;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.content-2 .isi .isi-1:hover{
+  transform: scale(0.95);
+}
+
+.content-2 .isi .isi-2:hover{
+  transform: scale(0.95);
+}
+
+.content-2 .isi .isi-3:hover{
+  transform: scale(0.95);
 }
 
 .content-3{
@@ -260,6 +216,11 @@ header .bagian-dua{
   text-align: center;
   top: 90px;
   font-size: 4rem;
+  transition: 0.5s;
+}
+
+.content-3 .judul-2 h1:hover{
+  color: #407bff;
 }
 
 .content-3 .medsos{
@@ -274,10 +235,16 @@ header .bagian-dua{
   position: relative;
   top: 200px;
   font-size: 3rem;
+  transition: 0.5s;
+}
+
+.content-3 .medsos ul li:hover{
+  font-size: 2.5rem;
 }
 
 .content-3 .medsos ul li a{
   color: #000;
+  text-decoration: none;
 }
 
 .content-3 .medsos ul li i{
