@@ -9,6 +9,7 @@ html {
   font-size: 10px;
   font-family: 'Fredoka One', cursive;
   scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0,0.95);
 }
 
 
@@ -16,6 +17,7 @@ img{
   max-width: 100%;
   max-height: 100%;
 }
+
 
 nav {
   position: fixed;
@@ -25,16 +27,15 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2.4rem 10rem;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 25px;
-  color: #263238;
-  border-bottom: 1px solid #e6e9ec;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  color: rgb(0, 153, 255);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
   width: 100%;
 }
 
 nav .nav-brand {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
@@ -59,19 +60,25 @@ nav .nav-section ul li {
 nav .nav-section ul li a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #000;
+  color: white;
   transition: all 0.3s;
 }
 
 nav .nav-brand:hover,
 nav .nav-section ul li a:hover {
-  color: #407bff;
+  color: rgb(76, 80, 76);
 }
 
 
 header{
+  background-image: url("https://cdn.glitch.global/a2520931-fe28-4c9b-b158-6088fae8bcf8/background.jpg?v=1664555636223");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  color: #000;
+  color: white;
 }
 
 header .bagian-satu{
@@ -101,6 +108,7 @@ header .bagian-satu .tombol{
   border-radius: 2rem;
   transition: all 0.3s;
   font-family: 'Fredoka One', cursive;
+  border: 2px solid rgb(0, 153, 255);
 }
 
 
@@ -110,12 +118,24 @@ header .bagian-satu .tombol a{
 }
 
 header .bagian-satu .tombol:hover{
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
   transform: scale(0.95);
+  color: rgb(0, 153, 255);
+  background: none;
   cursor: pointer;
 }
 
-header .bagian-dua{
+.showcase-img img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+/* header .bagian-dua{
   display: flex;
   position: relative;
   justify-content: center;
@@ -139,17 +159,18 @@ header .bagian-dua{
 .bagian-dua img:hover{
   transform: scale(0.95);;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.50);
-}
+} */
 
 .content-2{
   position: relative;
   width: 100%;
-  height: 700px;
+height: 1700px;
   margin-top: 30;
 }
 
 .content-2 .judul h1{
   position: relative;
+  color: rgb(0, 153, 255);
   text-align: center;
   top: 90px;
   font-size: 4rem;
@@ -157,15 +178,38 @@ header .bagian-dua{
   transition: 0.5s;
 } 
 
-.content-2 .judul h1:hover{
-  color: #407bff;
-} 
+.content-2 .aboutme{
+  display: flex;
+}
+
+.content-2 .aboutme img{
+  margin-top: 150px;
+  margin-left: 100px;
+  width: 410px;
+  height: 410px;
+  border-radius: 1000px;
+}
+
+.content-2 .aboutme .desc{
+  margin-top: 200px;
+  margin-left: 100px;
+  color: white;
+  font-size: 2rem;
+}
+
+.content-2 .aboutme .desc h1{
+  color: rgb(0, 153, 255);
+}
+
+.content-2 .aboutme .desc p{
+  font-size: 1.8rem;
+}
 
 .content-2 .isi{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 145px;
 }
 
 .content-2 .isi .isi-1{
@@ -175,7 +219,6 @@ header .bagian-dua{
   border-radius: 15px;
   background-color: white;
   transition: 0.5s;
-  border-style: solid;
   overflow: hidden;
 }
 
@@ -221,21 +264,10 @@ header .bagian-dua{
 .content-2 .isi .isi-2{
   margin: 10px;
   width: 250px;
-  height: 300px;
-  border-radius: 15px;
-  background-color: white;
-  transition: 0.5s;
-  border-style: solid;
-}
-
-.content-2 .isi .isi-2{
-  margin: 10px;
-  width: 250px;
   height: 350px;
   border-radius: 15px;
   background-color: white;
   transition: 0.5s;
-  border-style: solid;
   overflow: hidden;
 }
 
@@ -331,9 +363,10 @@ header .bagian-dua{
 }
 
 .content-3 .judul-2 h1{
+  color:  rgb(0, 153, 255);
   position: relative;
   text-align: center;
-  top: 200px;
+  top: 95px;
   font-size: 4rem;
   transition: 0.5s;
 }
@@ -342,7 +375,11 @@ header .bagian-dua{
   color: #407bff;
 }
 
-.content-3 .medsos{
+/* card 1 */
+
+
+
+/* .content-3 .medsos{
   text-align: center;
   margin-top: 40px;
 }
@@ -363,13 +400,13 @@ header .bagian-dua{
 }
 
 .content-3 .medsos ul li a{
-  color: #000;
+  color: white;
   text-decoration: none;
 }
 
 .content-3 .medsos ul li i{
-  color: #000;
-}
+  color: white;
+} */
 
 .portofolio{
   display: flex;
@@ -378,7 +415,18 @@ header .bagian-dua{
   align-items: center;
   width: 100%;
   height: 700px;
+  margin-top: 100px;
 }
+
+#portofolio .judul h1{
+  position: relative;
+  color: rgb(0, 153, 255);
+  text-align: center;
+  top: 90px;
+  font-size: 4rem;
+  margin-top: -300px;
+  transition: 0.5s;
+} 
 
 .card{
   position: absolute;
@@ -389,6 +437,7 @@ header .bagian-dua{
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
   margin-left: 400px;
+  margin-top: 225px;
 }
 
 .card:hover{
@@ -400,8 +449,8 @@ header .bagian-dua{
   left: 50%;
   top: -50px;
   transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   background: #000;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
@@ -434,7 +483,7 @@ header .bagian-dua{
 }
 
 .card .content .details{
-  padding: 39px;
+  padding: 30px;
   text-align: center;
   width: 100%;
   transition: 0.5s;
@@ -459,21 +508,21 @@ header .bagian-dua{
 }
 
 .portofolio .card .details .viewmore2 .tombol-viewmore-2{
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   padding: 1rem 4rem;
   font-size: 1.5rem;
-  background-color: black;
-  opacity: 0.5;
   border: none;
   border-radius: 2rem;
   transition: all 0.3s;
   font-family: 'Fredoka One', cursive;
+  background-color: rgba(0, 0, 0,0.95);
 }
 
 .portofolio .card .details .viewmore2 .tombol-viewmore-2 a{
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
+  opacity: 0.4;
 }
 
 .viewmore2 .tombol-viewmore-2:hover{
@@ -491,6 +540,7 @@ header .bagian-dua{
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
   margin-right: 400px;
+  margin-top: 225px;
 }
 
 .card-2:hover{
@@ -536,7 +586,7 @@ header .bagian-dua{
 }
 
 .card-2 .content .details{
-  padding: 39px;
+  padding: 30px;
   text-align: center;
   width: 100%;
   transition: 0.5s;
@@ -564,7 +614,7 @@ header .bagian-dua{
   margin-top: 1.5rem;
   padding: 1rem 4rem;
   font-size: 1.5rem;
-  background-color: rgb(0, 153, 255);
+  background-color: rgba(0, 0, 0,0.95);
   color: white;
   border: none;
   border-radius: 2rem;
@@ -582,7 +632,8 @@ header .bagian-dua{
 .portofolio .card-2 .details .viewmore .tombol-viewmore-1 a{
   list-style: none;
   text-decoration: none;
-  color: #000;
+  color: white;
+  opacity: 0.4;
 }
 
 footer .footer-bawah{
@@ -596,17 +647,17 @@ footer{
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #407bff;
+  background-color: rgb(0, 153, 255);
   height: 60px;
   flex-direction: row;
 }
 
-footer .medsos-footer{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0;
+.footer-bawah .copyright p{
+  font-size: 1.5rem;
+}
+
+footer .copyright p{
+  font-size: 1rem;
 }
 
 footer .medsos-footer ul li{
@@ -615,4 +666,241 @@ footer .medsos-footer ul li{
 
 footer .medsos-footer ul li a{
   color: white;
+}
+
+/* Contact sementara */
+
+.sosialmedia{
+  display: flex;
+  margin-top: 30px;
+	width: 100%;
+	height: 100vh;
+	display: inline-flex;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.card-in {
+	width: 250px;
+	height: 250px;
+	padding: 20px;
+  border-radius: 20px;
+	text-align: center;
+	margin: 0 10px;
+	background: #424549;
+	transition: .5s;
+}
+
+.card-in i {
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	line-height: 60px;
+	margin: auto;
+	background: #fff;
+	font-size: 25px;
+	color: #333;
+	position: relative;
+	top: 80px;
+	transition: .5s;
+}
+
+
+
+.card-in h1 {
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	top: 100px;
+	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+
+.card-in p {
+	font-size: 16px;
+	color: #fff;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	opacity: 0;
+	transition: .5s;
+}
+
+.card-in button{
+  margin-top: 6.5rem;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0,0.95);
+  opacity: 0;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  font-family: 'Fredoka One', cursive;
+  border: 2px solid rgba(0, 0, 0,0.95);
+}
+
+.card-in button a{
+  color:white;
+  text-decoration: none;
+}
+
+.card-in button:hover{
+  transform: scale(0.95);
+  color: rgba(0, 0, 0,0.95);
+  background: none;
+  cursor: pointer;
+}
+
+/* Hover-Section */
+.card-in:hover p {
+	opacity: 1;
+	transition: .5s;
+}
+
+.card-in:hover button{
+  opacity: 1;
+	transition: .5s;
+}
+
+.card-in:hover i {
+	top: -50px;
+	transition: .5s;
+}
+
+.card-in:hover h1 {
+	top: -20px;
+}
+
+.card-in:hover:nth-child(1) {
+	background: #7289da;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(2) {
+	background: #333;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(3) {
+	background: #e4405f;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(4) {
+	background: #075e54;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(1) i {
+	color: #7289da;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(2) i {
+	color: #333;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(3) i {
+	color: #e4405f;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+.card-in:hover:nth-child(4) i {
+	color: #075e54;
+	box-shadow: 0px 0px 5px 0px #666;
+	transition: .5s;
+}
+
+/* skills bar */
+
+.grafik-skill{
+  min-height: 100vh;
+}
+.grafik-skill .judul-skill h1{
+  position: relative;
+  color: rgb(0, 153, 255);
+  text-align: center;
+  font-size: 4rem;
+  transition: 0.5s;
+  margin-top: 100px;
+} 
+
+.skill-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin-top: 100px;
+}
+
+.skill-name{
+  font-size: 23px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: rgb(0, 153, 255);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -17px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
 }
